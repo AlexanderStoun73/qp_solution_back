@@ -14,7 +14,9 @@ public class WebConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                    .allowedOrigins("http://127.0.0.1:3000", "http://localhost:3000")
+                    .allowedOrigins("http://45.79.143.153",
+                        "http://qcksolve.us",
+                        "https://qcksolve.us")
                     .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                     .allowedHeaders("*")
                     .allowCredentials(true);
